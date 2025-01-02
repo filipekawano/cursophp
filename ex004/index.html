@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form action="cadastro.php" method="post">
+        <p>
+            <label for="inome">Nome</label><br>
+            <input type="text" name="nome" id="inome" class="campo">
+        </p>
+        <p>
+            <label for="isobrenome">Sobrenome</label><br>
+            <input type="text" name="sobrenome" id="isobrenome" class="campo">
+        </p>
+        <p>
+            <input type="submit" value="Enviar" class="botao_enviar" onmouseenter="entrar()" onmouseout="sair()">
+        </p>
+    </form>
+    
+    <script src="script.js">
+    </script>
+</body>
+</html>
