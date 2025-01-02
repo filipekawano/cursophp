@@ -17,7 +17,7 @@
         var_dump($num);
 
         $nome = "Filipão";
-        echo "Meu nome é $nome. \n";
+        echo "Meu nome é $nome. ";
         echo 'Meu nome é $nome. ';
 
         $nome = "Rodrigo";
