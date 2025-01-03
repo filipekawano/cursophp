@@ -14,7 +14,7 @@
         <?php 
             $name = $_GET["nome"];
             $surname = $_GET["sobrenome"];
-            echo "<p>É um prazer te conhecer, $name $surname! Este é o meu site.</p>"
+            echo "<p>É um prazer te conhecer, <strong>$name $surname</strong>! Este é o meu site.</p>"
         ?>
     </main>
 </body>
