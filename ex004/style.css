@@ -5,6 +5,8 @@
     padding: 0;
     box-sizing: border-box;
     font: normal 18px Arial, sans-serif;
+    outline: none;
+    border: none;
 }
 
 body {
@@ -32,8 +34,6 @@ form > div {
 }
 
 form input {
-    outline: none;
-    border: none;
     width: 100%;
     margin-top: 5px;
     border-radius: 10px;
@@ -41,9 +41,10 @@ form input {
 
 .campo {
     padding: 5px;
+    box-shadow: inset 1.5px 1.5px 0px rgba(0, 0, 0, 0.596);
 }
 
-.botao_enviar {
+#botao_enviar {
     background-color: rgb(74, 14, 216);
     color: white;
     margin-top: 12.5px;
@@ -51,6 +52,7 @@ form input {
     cursor: pointer;
 }
 
-.botao_enviar:focus {
-    box-shadow: 1px 1px 1px black;
+#botao_enviar:focus {
+    outline: 1.2px solid black;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.486);
 }

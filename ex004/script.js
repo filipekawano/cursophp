@@ -1,4 +1,4 @@
-var botao_enviar = window.document.querySelector('input.botao_enviar')
+var botao_enviar = window.document.querySelector('input#botao_enviar')
 
 function entrar() {
     botao_enviar.style.boxShadow = "inset 1.5px 1.5px 1px rgba(0, 0, 0, 0.49)"
