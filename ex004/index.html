@@ -7,20 +7,23 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <form action="cadastro.php" method="post">
-        <p>
+    <header>
+        <h1>Apresente-se para nós</h1>
+    </header>
+    <form action="cadastro.php" method="get">
+        <div>
             <label for="inome">Nome</label><br>
             <input type="text" name="nome" id="inome" class="campo">
-        </p>
-        <p>
+        </div>
+        <div>
             <label for="isobrenome">Sobrenome</label><br>
             <input type="text" name="sobrenome" id="isobrenome" class="campo">
-        </p>
-        <p>
+        </div>
+        <div>
             <input type="submit" value="Enviar" class="botao_enviar" onmouseenter="entrar()" onmouseout="sair()">
-        </p>
+        </div>
     </form>
-    
+
     <script src="script.js">
     </script>
 </body>
