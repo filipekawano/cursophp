@@ -2,7 +2,7 @@
     class ContaBanco {
 
         public $numConta; // int
-        protected $tipo; // string (cc ==> 50 ou cp ==> 150)
+        protected $tipo; // string (cc ou cp)
         private $dono; // string
         private $saldo; // float
         private $status; // boolean
@@ -43,7 +43,20 @@
             }
         }
         public function pagarMensal() { // (cc ==> 50 ou cp ==> 150)
-
+            if ($this->tipo == "cc") {
+                $v = 12;
+            } else if ($this->tipo == "cp") {
+                $v = 20;
+            }
+            if ($this->status) {
+                if ($this->saldo > $v) {
+                    $this->saldo -= $v;
+                } else {
+                    echo "<p>Saldo insuficiente</p>";
+                }
+            } else {
+                echo "<p>Conta fechada</p>";
+            }
         }
 
         public function getNumConta() {
